@@ -1,0 +1,27 @@
+project:
+  name: start
+
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://frps.hubby.top:3306/coal-craftsman?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowMultiQueries=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true&rewriteBatchedStatements=true&autoReconnect=true
+    username: ENC(jDU5HP5tdv0KrtcpvhUpkLik+LjjYNyD+UTmuFx9y6+mS3Hwrx1jxGguwDltevUk)
+    password: ENC(QCpB/pXaVnUCCTzM+9B60wg4QbNPXgFIfYFBLt5P9BKP3GgaC2bKvzEtIcI/YOch)
+  flyway:
+    enabled: true
+    user: ENC(jDU5HP5tdv0KrtcpvhUpkLik+LjjYNyD+UTmuFx9y6+mS3Hwrx1jxGguwDltevUk)
+    password: ENC(QCpB/pXaVnUCCTzM+9B60wg4QbNPXgFIfYFBLt5P9BKP3GgaC2bKvzEtIcI/YOch)
+    url: jdbc:mysql://frps.hubby.top:3306/coal-craftsman?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowMultiQueries=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true&rewriteBatchedStatements=true&autoReconnect=true
+    validate-on-migrate: true
+    baseline-on-migrate: true
+    baseline-version: 1.0.1
+    table: flyway_schema_history
+    locations: classpath:db/migration
+
+#mybatis
+mybatis:
+  config-location: classpath:mybatis-config.xml
+

@@ -1,5 +1,5 @@
 {"initialized":true,"version":"1.0.0"}
-com.alibaba.craftsman.gatewayimpl.database.MetricTunnel_create
+io.github.alice52.craftsman.gatewayimpl.database.MetricTunnel_create
 ---------------------------
 [
 	1
